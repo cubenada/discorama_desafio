@@ -1,8 +1,8 @@
 version: 2
 sources:
   - name: erp
-    schema: erp_discorama
-    description: Fonte de dados de vendas do SAP discorama
+    schema: dbt_lorenzog_erp_discorama
+    description: Fonte de dados do SAP Discorama
     tables:
       - name: actor
         columns:
@@ -10,3 +10,34 @@ sources:
             tests:
               - unique
               - not_null
+      - name: address
+        description: Tabela de endereço dos clientes
+        columns:
+          - name: address_id
+            tests:
+              - unique
+              - not_null
+      - name: category
+        description: Tabela com categorias dos filmes
+      - name: city
+        description: Tabela de cidades e pais
+      - name: country
+        description: Tabela de pais
+      - name: customer
+        description: Tabela de clientes
+      - name: film
+        description: Tabela de filmes
+      - name: film_actor
+        description: Tabela de filmes com atores
+      - name: film_category
+        description: Tabela de filmes com categorias
+      - name: inventory
+        description: Tabela de inventario
+      - name: payment
+        description: Tabela de pagamentos
+      - name: rental
+        description: Tabela de aluguel
+      - name: staff
+        description: Tabela da staff
+      - name: store
+        description: Tabela da Store
