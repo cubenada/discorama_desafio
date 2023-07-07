@@ -1,0 +1,12 @@
+version: 2
+sources:
+  - name: erp
+    schema: erp_discorama
+    description: Fonte de dados de vendas do SAP discorama
+    tables:
+      - name: actor
+        columns:
+          - name: actor_id
+            tests:
+              - unique
+              - not_null
