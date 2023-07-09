@@ -1,0 +1,10 @@
+version: 2
+models:
+  - name: dim_rental_category
+    description: Dimensão de rentals da Discorama.
+    columns:
+      - name: rental_id
+        description: Chave primária da tabela rental.
+        tests:
+          - unique
+          - not_null

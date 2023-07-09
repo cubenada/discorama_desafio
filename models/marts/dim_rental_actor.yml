@@ -1,0 +1,10 @@
+version: 2
+models:
+  - name: dim_rental_actor
+    description: Dimensão de rentals por ator.
+    columns:
+      - name: rental_actor_pk
+        description: Chave primária da tabela rental.
+        tests:
+          - unique
+          - not_null

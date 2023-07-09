@@ -1,0 +1,10 @@
+version: 2
+models:
+  - name: dim_rental_customer
+    description: Dimensão de rentals por cliente
+    columns:
+      - name: rental_id
+        description: Chave primária da tabela rental_client
+        tests:
+          - unique
+          - not_null

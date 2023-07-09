@@ -5,7 +5,8 @@ with
             cast(first_name || ' ' || last_name as string) as full_name,
             cast(first_name as string) as first_name,
             cast(last_name as string) as last_name,
-            cast(address_id as int) as address_id
+            cast(address_id as int) as address_id,
+            cast(store_id as int) as store_id
         from {{ source('erp', 'customer') }}
     )
 select *

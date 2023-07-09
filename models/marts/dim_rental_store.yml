@@ -1,0 +1,10 @@
+version: 2
+models:
+  - name: dim_rental_store
+    description: Dimensão de rentals por store.
+    columns:
+      - name: rental_id
+        description: Chave primária da tabela rental_store
+        tests:
+          - unique
+          - not_null
