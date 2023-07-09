@@ -1,0 +1,10 @@
+version: 2
+models:
+  - name: dim_rental_payment
+    description: Dimensão de rental payment
+    columns:
+      - name: rental_id
+        description: Chave primária da tabela rental_payment
+        tests:
+          - unique
+          - not_null
