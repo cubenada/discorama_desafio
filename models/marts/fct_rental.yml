@@ -1,0 +1,10 @@
+version: 2
+models:
+  - name: fct_rental
+    description: fact rental
+    columns:
+      - name: rental_id
+        description: Chave primária da tabela fct_rental
+        tests:
+          - unique
+          - not_null

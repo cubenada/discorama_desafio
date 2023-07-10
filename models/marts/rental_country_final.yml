@@ -1,7 +1,7 @@
 version: 2
 models:
-  - name: dim_rental_country
-    description: Dimensão de rentals por country
+  - name: rental_country_final
+    description: Tabela final de aluguel por pais.
     columns:
       - name: rental_id
         description: Chave primária da tabela rental_country

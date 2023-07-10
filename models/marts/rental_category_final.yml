@@ -1,9 +1,9 @@
 version: 2
 models:
-  - name: dim_rental_actor
-    description: Dimensão de rentals por ator.
+  - name: rental_category_final
+    description: Tabela final de aluguel por categoria
     columns:
-      - name: rental_actor_pk
+      - name: rental_id
         description: Chave primária da tabela rental.
         tests:
           - unique
