@@ -1,9 +1,9 @@
 version: 2
 models:
-  - name: dim_rental_category
-    description: Dimensão de rentals da Discorama.
+  - name: rental_actor_final
+    description: Tabela final de aluguel por ator
     columns:
-      - name: rental_id
+      - name: rental_actor_pk
         description: Chave primária da tabela rental.
         tests:
           - unique

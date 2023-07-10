@@ -1,0 +1,10 @@
+version: 2
+models:
+  - name: fct_payment
+    description: fact payment
+    columns:
+      - name: payment_id
+        description: Chave primária da tabela fct_payment
+        tests:
+          - unique
+          - not_null
